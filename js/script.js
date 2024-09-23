@@ -6,7 +6,7 @@ function getInputValuById(num) {
 }
 
 // reusable function 2
-function getValueById(num) {
+function getCollectionValueById(num) {
     return document.getElementById(`totalCollection-${num}`);
 }
 
@@ -15,14 +15,16 @@ function getHeadingNameById(num) {
 }
 
 
-
+function getValueById(id){
+    return document.getElementById(id);
+}
 
 
 
 function donate(number) {
     const inputs = getInputValuById(number);
     const donateAmount = inputs.value;
-    const collection = getValueById(number).innerText;
+    const collection = getCollectionValueById(number).innerText;
     const accountBalanceEl = document.getElementById('accountBalance');
     const currentBalance = accountBalanceEl.innerText;
 
@@ -61,5 +63,33 @@ function donate(number) {
     `
 
 
+    
 
 }
+
+function toggleBtn(event){
+    const cardSectionEl = getValueById('cardSection');
+    const historySectionEl = getValueById('historySection');
+    const donationBtnEl = getValueById('donationBtn');
+    const historyBtnEl = getValueById('historyBtn');
+
+    
+    if(event.innerText == 'History'){
+        historySectionEl.classList.remove('hidden');
+        cardSectionEl.classList.add('hidden');
+        donationBtnEl.classList.remove('bg-primary')
+        historyBtnEl.classList.add('bg-primary');
+        historyBtnEl.classList.remove('text-gray-400');
+        donationBtnEl.classList.add('text-gray-400')
+        
+    }
+    else{
+        historySectionEl.classList.add('hidden')
+        cardSectionEl.classList.remove('hidden')
+        historyBtnEl.classList.remove('bg-primary')
+        donationBtnEl.classList.add('bg-primary');
+        donationBtnEl.classList.remove('text-gray-400')
+        historyBtnEl.classList.add('text-gray-400');
+    }
+}
+

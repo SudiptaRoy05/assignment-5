@@ -51,17 +51,18 @@
             </div>
         </nav>
         <!-- nav end  -->
-        <div class="bannerArea text-center lg:pt-14 pt-6 space-x-6">
-            <button class="btn bg-primary lg:w-[165px] lg:h-[65px] text-xl lg:font-semibold">Donation</button>
-            <button
-                class="btn  lg:w-[165px] lg:h-[65px] text-xl lg:font-semibold text-[#111111B3] opacity-70">History</button>
+        <div class="backdrop-blur-md bannerArea text-center lg:pt-8 lg:pb-2 pt-6 space-x-6">
+            <button id="donationBtn" onclick="toggleBtn(this)"
+                class="btn bg-primary lg:w-[165px] lg:h-[65px]  text-xl lg:font-semibold">Donation</button>
+            <button id="historyBtn" onclick="toggleBtn(this)"
+                class="btn  lg:w-[165px] lg:h-[65px] text-xl lg:font-semibold text-gray-400">History</button>
         </div>
     </header>
 
     <main>
 
         <!-- card section start  -->
-        <section class=" w-11/12 mx-auto">
+        <section id="cardSection" class=" w-11/12 mx-auto">
             <div class="lg:w-10/12  mx-auto lg:mt-14 mt-6 border lg:p-10 p-2 lg:rounded-3xl rounded-lg">
                 <div class=" grid lg:grid-cols-2 gap-x-10 ">
                     <div>
@@ -105,7 +106,8 @@
                             <span id="totalCollection-2">50000</span>
                             <p>BDT</p>
                         </button>
-                        <h2 id="headingName-2" class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <h2 id="headingName-2" class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh
+                        </h2>
                         <p class="text-[#111111B3] opacity-70 text-lg">
                             The recent floods in Feni have devastated local communities, leading to severe disruption
                             and loss. Your generous donation will help provide immediate aid, including food, clean
@@ -134,16 +136,6 @@
                                 </div>
                             </div>
                         </dialog>
-
-
-
-
-
-
-
-
-
-
 
                     </div>
                 </div>
@@ -184,9 +176,9 @@
 
         <!-- history section start  -->
 
-        <section class="lg:w-10/12 mx-auto mt-10 ">
+        <section id="historySection" class="lg:w-10/12 mx-auto mt-10 hidden">
             <div id="historyLog" class="w-11/12 mx-auto space-y-4 ">
-                
+
             </div>
         </section>
 
