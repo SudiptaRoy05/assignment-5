@@ -30,7 +30,7 @@
 </head>
 
 <body class="font-lexend ">
-    <header class=" sticky top-0">
+    <header class=" sticky top-0 backdrop-blur-md">
         <!-- nav start  -->
         <nav class="bg-secondary ">
             <div class="navbar  w-10/12 mx-auto lg:py-6">
@@ -51,7 +51,7 @@
             </div>
         </nav>
         <!-- nav end  -->
-        <div class="backdrop-blur-md bannerArea text-center lg:pt-8 lg:pb-2 pt-6 space-x-6">
+        <div class=" bannerArea text-center lg:pt-8 lg:pb-2 pt-6 space-x-6">
             <button id="donationBtn" onclick="toggleBtn(this)"
                 class="btn bg-primary lg:w-[165px] lg:h-[65px]  text-xl lg:font-semibold">Donation</button>
             <button id="historyBtn" onclick="toggleBtn(this)"
@@ -84,7 +84,7 @@
                         </p>
                         <input id="donationInput-1" type="text"
                             class="pl-5 border border-gray-500 w-full h-16 rounded-lg "
-                            placeholder="Write Donation Amount">
+                            placeholder="Enter Donation Amount">
 
                         <button onclick="donate(1)"
                             class="btn bg-primary w-full h-16 text-xl font-semibold rounded-lg">Donate Now</button>
@@ -133,7 +133,7 @@
                         </p>
                         <input id="donationInput-2" type="text"
                             class="pl-5 border border-gray-500 w-full h-16 rounded-lg "
-                            placeholder="Write Donation Amount">
+                            placeholder="Enter Donation Amount">
                         <button class="btn bg-primary w-full h-16 text-xl font-semibold rounded-lg"
                             onclick="donate(2)">Donate Now</button>
 
@@ -179,7 +179,7 @@
                         </p>
                         <input id="donationInput-3" type="text"
                             class="pl-5 border border-gray-500 w-full h-16 rounded-lg "
-                            placeholder="Write Donation Amount">
+                            placeholder="Enter Donation Amount">
                         <button class="btn bg-primary w-full h-16 text-xl font-semibold rounded-lg"
                             onclick="donate(3)">Donate Now</button>
                     </div>
