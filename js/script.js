@@ -56,14 +56,14 @@ function donate(number) {
     console.log(historyLogs)
     historyLogs.innerHTML += `
         <div  class="border rounded-xl p-10 space-y-3">
-                    <h1 class="lg:text-2xl text-xl font-bold">${donateAmount} ${heading}
+                    <h1 class="lg:text-2xl text-xl font-bold">${donateAmount} Taka is ${heading}
                     </h1>
                     <p class="text-[#111111B3] opacity-70">Date: ${currentDate.toDateString()} ${currentDate.toTimeString()}</p>
                 </div>
     `
 
 
-    
+    my_modal_1.showModal();
 
 }
 
