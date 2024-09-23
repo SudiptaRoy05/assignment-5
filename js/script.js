@@ -1,11 +1,10 @@
 
-
-// reuseable function 1 
+ 
 function getInputValuById(num) {
     return document.getElementById(`donationInput-${num}`);
 }
 
-// reusable function 2
+
 function getCollectionValueById(num) {
     return document.getElementById(`totalCollection-${num}`);
 }
@@ -32,7 +31,7 @@ function donate(number) {
     if (isNaN(donateAmount) || donateAmount === 'string') {
         return alert("Input should be a number");
     } else if (donateAmount <= 0) {
-        return alert("Invalid Input(it should be a positive number)")
+        return alert("Invalid Input")
     }
     if (parseFloat(donateAmount) > parseFloat(currentBalance)) {
         return alert("insufficient balance")
